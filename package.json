@@ -1,0 +1,27 @@
+{
+
+  "name": "ecobee-app",
+
+  "version": "1.0.0",
+
+  "private": false,
+
+  "scripts": {
+
+    "start": "node index.js"
+
+  },
+
+  "dependencies": {
+
+    "express": "3.0.0",
+
+    "ejs": "*",
+
+    "expect.js":"*"
+
+  },
+  "repository": "https://github.com/OutsourcedGuru/ecobee-app",
+  "license": "MIT"
+
+}
