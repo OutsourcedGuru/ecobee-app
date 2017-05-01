@@ -32,6 +32,25 @@ Here are the instructions for installing the application server.
 ![portal](https://cloud.githubusercontent.com/assets/15971213/25591492/9e7c3f70-2e69-11e7-8612-a25806702ee9.png)
 
 5. Copy/paste the API key into your local **/config** file's **apiKey** value
-6. In the EMS (or similar) main tab, navigate to the Thermostats section
+6. In the EMS (or similar) main tab, navigate to the Thermostats section and note the scope path
 
-under the EMS (or similar) main tab, then the My Apps section
+![scope](https://cloud.githubusercontent.com/assets/15971213/25591920/627337fc-2e6b-11e7-876e-ebc7c86179a1.png)
+
+7. Update your /ecobee-api file's ThermostatSummaryOptions() function with the scope information you just found
+
+```
+ecobee.ThermostatSummaryOptions = function() {
+		this.selection = {
+				
+			selectionType: 'managementSet',
+			selectionMatch : '/YOURSCOPEHERE'
+			//selectionType: 'registered',
+			//selectionMatch : null
+		}
+};
+```
+
+8. npm start
+9. From the same or another computer, visit http://servername 
+10. Note the PIN request number
+11. Back in the Ecobee portal's EMS (or similar) tab, navigate to **My Apps**, enter this PIN and click the **Install App** button, authorizing this app
