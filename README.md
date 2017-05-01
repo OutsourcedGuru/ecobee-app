@@ -45,8 +45,8 @@ Here are the instructions for installing the application server.
 
 11. Back in the Ecobee portal's EMS (or similar) tab, navigate to **My Apps**, enter this PIN and click the **Install App** button, authorizing this app
 
-![authorize](https://cloud.githubusercontent.com/assets/15971213/25597325/f572920c-2e82-11e7-8803-cfa9d09f192b.png)
 ![installapp](https://cloud.githubusercontent.com/assets/15971213/25592141/799c3b26-2e6c-11e7-85f1-437f823bed03.png)
+![authorize](https://cloud.githubusercontent.com/assets/15971213/25597325/f572920c-2e82-11e7-8803-cfa9d09f192b.png)
 
 12. Back in the application session, click the **Complete Link** button at the bottom of the screen
 13. If successful, you should see a collection of thermostats that are registered against your account and in the scope you found earlier on their portal.
