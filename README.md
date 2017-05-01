@@ -23,3 +23,7 @@ The system is probably a little too secure in that each server->client instance 
 
 ## Installation
 Here are the instructions for installing the application server.
+1. git clone https://github.com/OutsourcedGuru/ecobee-app
+2. cd ecobee-app
+3. npm install
+4. Log into your Ecobee.com portal, click the Developer tab, and create a new application
