@@ -5,7 +5,7 @@ This application server runs in Node.js, serving up an interface for portable de
 
 ![ecobee](https://cloud.githubusercontent.com/assets/15971213/25590647/425dd7ba-2e66-11e7-8793-09f4fdfa5036.jpg)
 
-In order to use and apprecicate any of this, it is expected that you 1) own an Ecobee thermostat, 2) have created/registered an account on their Ecobee.com website and 3) have joined their [https://www.ecobee.com/developers/](developer program) by clicking the **Become a Developer button**. Once done, you would then have access to the Developer tab on their online portal. This is a requirement for generating a necessary **appKey** for the **/config** file.
+In order to use and apprecicate any of this, it is expected that you 1) own an Ecobee thermostat, 2) have created/registered an account on their Ecobee.com website, 3) have joined their [https://www.ecobee.com/developers/](developer program) by clicking the **Become a Developer button** and 4) have registered one or more Ecobee devices into the same scope. Once done, you would then have access to the Developer tab on their online portal. This is a requirement for generating a necessary **appKey** for the **/config** file.
 
 It's good to know what style of Ecobee device that you have. Mine are of the EMS Si variety so my **/config** file's **scope** variable indicates "ems". If your Ecobee is more of the consumer style (rather than business-style like mine), it will be necessary to change this scope to match. Their developer website would give you this guidance of course.
 
@@ -17,7 +17,7 @@ The system is probably a little too secure in that each server->client instance 
 4. From any computer, log into the Ecobee.com website with your email/password from an earlier registration you've hopefully done
 5. Visit the App tab from their portal and enter in the PIN request
 6. Authorize the application to run
-7. Back on the web session from step 2 above, select the Connect link at the bottom of this screen
+7. Back on the web session from step 2 above, select the **Complete Link** link at the bottom of this screen
 8. You should see a list of Ecobee thermostats
 9. Select one to see its current values and optionally, to control its temperature
 
@@ -54,3 +54,8 @@ ecobee.ThermostatSummaryOptions = function() {
 9. From the same or another computer, visit http://servername 
 10. Note the PIN request number
 11. Back in the Ecobee portal's EMS (or similar) tab, navigate to **My Apps**, enter this PIN and click the **Install App** button, authorizing this app
+
+![installapp](https://cloud.githubusercontent.com/assets/15971213/25592141/799c3b26-2e6c-11e7-85f1-437f823bed03.png)
+
+12. Back in the application session, click the **Complete Link** button at the bottom of the screen
+13. If successful, you should see a collection of thermostats that are registered against your account and in the scope you found earlier on their portal.
