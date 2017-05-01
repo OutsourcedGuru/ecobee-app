@@ -28,6 +28,7 @@ Here are the instructions for installing the application server.
 3. npm install
 4. Log into your Ecobee.com portal, click the Developer tab, and create a new application
 
+![developer](https://cloud.githubusercontent.com/assets/15971213/25591712/7fce49f0-2e6a-11e7-9840-1a2e28a84326.png)
 ![portal](https://cloud.githubusercontent.com/assets/15971213/25591492/9e7c3f70-2e69-11e7-8612-a25806702ee9.png)
 
 5. Copy/paste the API key into your local **/config** file's **apiKey** value
