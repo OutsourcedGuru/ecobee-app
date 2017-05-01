@@ -5,7 +5,7 @@ This application server runs in Node.js, serving up an interface for portable de
 
 ![ecobee](https://cloud.githubusercontent.com/assets/15971213/25590647/425dd7ba-2e66-11e7-8793-09f4fdfa5036.jpg)
 
-In order to use and apprecicate any of this, it is expected that you 1) own an Ecobee thermostat, 2) have created/registered an account on their Ecobee.com website, 3) have joined their https://www.ecobee.com/developers site by clicking the **Become a Developer button** and 4) have registered one or more Ecobee devices into the same scope. Once done, you would then have access to the Developer tab on their online portal. This is a requirement for generating a necessary **appKey** for the **/config.js** file.
+In order to use and appreciate any of this, it is expected that you 1) own an Ecobee thermostat, 2) have created/registered an account on their Ecobee.com website, 3) have joined their https://www.ecobee.com/developers site by clicking the **Become a Developer button** and 4) have registered one or more Ecobee devices into the same scope. Once done, you would then have access to the Developer tab on their online portal. This is a requirement for generating a necessary **appKey** for the **/config.js** file.
 
 It's good to know what style of Ecobee device that you have. Mine are of the EMS Si variety so my **/config.js** file's **scope** variable indicates "ems". If your Ecobee is more of the consumer style (rather than business-style like mine), it will be necessary to change this scope to match. Their developer website would give you this guidance of course.
 
@@ -36,20 +36,7 @@ Here are the instructions for installing the application server.
 
 ![scope](https://cloud.githubusercontent.com/assets/15971213/25591920/627337fc-2e6b-11e7-876e-ebc7c86179a1.png)
 
-7. Update your /ecobee-api file's ThermostatSummaryOptions() function with the scope information you just found
-
-```
-ecobee.ThermostatSummaryOptions = function() {
-		this.selection = {
-				
-			selectionType: 'managementSet',
-			selectionMatch : '/YOURSCOPEHERE'
-			//selectionType: 'registered',
-			//selectionMatch : null
-		}
-};
-```
-
+7. Update your **/config.js** file's **scopePath** value.
 8. npm start
 9. From the same or another computer, visit http://servername:3000
 10. Note the PIN request number
