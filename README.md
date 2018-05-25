@@ -53,3 +53,8 @@ Here are the instructions for installing the application server.
 
 ![thermostats](https://cloud.githubusercontent.com/assets/15971213/25597360/1d2648e8-2e83-11e7-829e-0b766a597415.png)
 ![singlemanual](https://cloud.githubusercontent.com/assets/15971213/25597378/3aeb4414-2e83-11e7-95cd-19912ff2bc62.png)
+
+|Donate||Cryptocurrency|
+|:-----:|---|:--------:|
+| ![eth-receive](https://user-images.githubusercontent.com/15971213/40564950-932d4d10-601f-11e8-90f0-459f8b32f01c.png) || ![btc-receive](https://user-images.githubusercontent.com/15971213/40564971-a2826002-601f-11e8-8d5e-eeb35ab53300.png) |
+|Ethereum||Bitcoin|
